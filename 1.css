@@ -1,0 +1,485 @@
+:root {
+  --hijau: #2d3f16;
+  --putih: #dbcfc9;
+  --hitam: #000000;
+  --shadow: 3px 3px 3px #51443f;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Playpen Sans", cursive;
+  min-height: 3500px;
+}
+
+/*modal*/
+.modal-body .container h1{
+  font-family: "Sacramento";
+  font-size: 6rem;
+  color: #000000;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #b8e37e,
+    0 0 82px #b8e37e,
+    0 0 92px #b8e37e,
+    0 0 102px #b8e37e,
+    0 0 151px #b8e37e;
+}
+
+.modal-header{
+background-color: var(--hijau);
+}
+
+.modal-body {
+  background-image: url('img/fotoinmodal.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#button {
+  background-color: var(--hijau);
+  color: white; 
+}
+
+#button:hover {
+  background-color: var(--hijau);
+  box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #b8e37e,
+    0 0 82px #b8e37e,
+    0 0 92px #b8e37e,
+    0 0 102px #b8e37e,
+    0 0 151px #b8e37e;
+}
+
+/*pertama*/
+.hero::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/home.jpg); 
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+  color: var(--putih);
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p.alamat{
+  font-family: "Playpen Sans", cursive;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+/* .hero a {
+  background-color: var(--hijau);
+  color: var(--putih);
+}
+
+.hero a:hover {
+  background-color: #2d3f1687;
+  color: rgb(0, 0, 0, 0.75);
+  border: solid 1.5px;
+} */
+
+/*waktu*/
+.simply-countdown {
+  overflow: hidden;
+  display: table;
+  font-family: "Arial", sans-serif;
+  margin: auto;
+}
+
+.simply-countdown > .simply-section {
+  width: 50px;
+  height: 50px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 10px;
+  background: var(--hijau);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 50%;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 1.4rem;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 1rem;
+}
+
+
+/*nav*/
+nav{
+  background-color: var(--hijau);
+}
+
+.mynav .navbar-brand{ /*syukuran*/
+  font-family:  'sacramento';
+  font-size: 3.5rem;
+  text-shadow:
+  0 0 7px #2d3f16,
+  0 0 10px #fff
+}
+
+.mynav .nav-link{
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.mynav .nav-link.nav-link:hover{
+  font-weight: bold;
+}
+
+.mynav .dropdown-menu{
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  background-color: #546e31;
+}
+
+.mynav .dropdown-item:hover{
+  font-size: 1.3rem;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+/*halaman 2*/
+.home{
+  background-image: url(img/bg-black.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin-top: -5.5rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.home .lamp{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #b8e37e,
+    0 0 82px #b8e37e,
+    0 0 92px #b8e37e,
+    0 0 102px #b8e37e,
+    0 0 151px #b8e37e;
+  position: absolute;
+  left: 10%;
+}
+
+.home .lamp2{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #b8e37e,
+    0 0 82px #b8e37e,
+    0 0 92px #b8e37e,
+    0 0 102px #b8e37e,
+    0 0 151px #b8e37e;
+  position: absolute;
+  right: 10%;
+}
+
+.home .lamp i{
+  margin: auto;
+  color: black;
+}
+
+.home .lamp2 i{
+  margin: auto;
+  color: black;
+}
+
+.home h2{
+  color: var(--putih);
+  font-family: 'sacramento';
+  text-shadow:
+  0 0 7px black,
+  0 0 10px #fff
+}
+
+.home h3, p{
+  font-family: "Times New Roman", Times, serif;
+  color: var(--putih);
+}
+
+.home .family{
+  margin-top: 100px;
+}
+
+.home .family h3{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: var(--hijau);
+}
+
+.home .family img{
+  width: 100%;
+  border-radius: 15%;
+}
+
+/*halaman 3*/
+.info{
+  background-image: url(img/bg-pastel.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info a{
+  color: var(--putih);
+  background-color: var(--hijau);
+}
+
+.info a:hover{
+  color: var(--putih);
+  background-color: #2d3f16ca;
+}
+
+.info h2{
+  font-family: 'sacramento';
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.info .alamat{
+  font-size: 1.1rem;
+}
+
+.info .description{
+  font-size: 1rem;
+}
+
+.info .card{
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid #999;
+}
+
+.info .card-header{
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+  font-size: 1rem;
+}
+
+.info .card-footer{
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/*galery*/
+.buttong{
+  margin: 15px;
+}
+/* Center website */
+.gallery {
+  background-image: url(img/bg-black.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.gallery h4{
+  color: white;
+  text-transform: capitalize;
+}
+
+.gallery h2{
+  font-family: 'sacramento';
+  font-size: 3.5rem;
+  color: var(--putih);
+  text-shadow:
+  0 0 7px black,
+  0 0 10px #fff
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(0, 0, 0, 0.499);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.audio-icon-wrapper{
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem ;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  z-index: 10000000;
+}
+
+@keyframes rotating{
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .column {
+    width: 33.33%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .column {
+    width: 50%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 4px;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+}

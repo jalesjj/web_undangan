@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <title>undangan</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playpen+Sans:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+    <script src="simplyCountdown.min.js"></script>
+    
+    <script src="1.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="1.css" />
+
+    <!--untuk modal-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  </head>
+
+
+<body>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-white">Tamu undangan</h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+          <h1>Undangan</h1>
+          <h3>Tasyakuran hunian baru</h3>
+          <br>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <div class="card border-dark p-5">
+                <label for="nama" class="form-label text-white">Nama panjang:</label>
+                <input type="text" class="form-control form-control-lg" id="username" placeholder="Masukkan nama panjang anda...">
+                <br>
+            <div class="col-md-12 mb-3">
+                <label for="nama" class="form-label text-bg-light">Alamat lengkap:</label>
+                <input type="text" class="form-control form-control-lg" id="alamatInput" placeholder="Masukkan alamat anda...">
+            </div>
+            <br>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-lg" id="button" data-bs-dismiss="modal" onClick="enableScroll()">baca Undangan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- agar modal muncul pertama -->
+<script src="modal.js"></script>
+
+
+  <section
+    id="hero"
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
+    <main>
+      <h4>kepada bapak/ibu/saudara/i,</h4>
+      <h1 id="name"></h1>
+      <p class="alamat" id="alamat"></p>
+      <p>anda akan diundang dalam acara syukuran vila baru milik keluarga jales dalam waktu :</p>
+      <div class="simply-countdown"></div>
+    </main>
+  </section>
+
+  <!-- input nama & alamat -->
+<script src="inputname.js"></script>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top mynav">
+    <div class="container-fluid">
+      <a class="navbar-brand mb-0 h1" style="color:#fff;">Syukuran</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#munculsemua" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="munculsemua">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">halaman depan surat</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Ucapan</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#info" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              informasi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#info">tanggal jadwal </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#gallery">gallery</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <span class="lamp"><i class="bi bi-lightbulb-fill"></i></span>
+          <span class="lamp2"><i class="bi bi-lightbulb-fill"></i></span>
+          <h2 class="display-1"> syukuran </h2>
+          <h3 ><br>selamat datang, para tamu yang terhormat, saudara-saudari sekalian</h3>
+          <p>Kami sangat senang dan penuh antusiasme dalam merencanakan acara syukuran ini, yang akan segera kami selenggarakan. Acara syukuran ini akan menjadi sebuah momen yang istimewa, dan kami merasa sangat beruntung karena Anda semua akan menjadi bagian dari perayaan ini.</p>
+        </div>
+      </div>
+
+      <div class="row family">
+          <div class="row">
+            <div class="col-6">
+              <img src="img/family.jpg" alt="keluarga" class="img-responsive">
+            </div>
+            <div class="col-6">
+              <h3>pemilik vila</h3>
+              <p>bpk... <br>ibu... <br>mbak... <br>mas...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center ">
+          <h2 class="">informasi acara</h2>
+          <p class="alamat  text-dark">Alamat: Jl. Tunjungan No.11 - 21, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60275.<br>Hotel Platinum - Tunjungan</p>
+          <a href="https://maps.app.goo.gl/AY43u2LDjYME3ZU78" target="_blank" class="btn my-3">klik buka map</a>
+          <p class="description  text-dark">diharapkan untuk tidak salah alamat dan tanggal.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light mb-5">
+            <div class="card-header">
+              syukuran day 1
+            </div>
+            <div class="card-body">
+             <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>08.00 - 10.00</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar-event d-block"></i>
+                <span>senin, 22 july 2024</span>
+              </div>
+             </div>
+            </div>
+            <div class="card-footer ">
+              saat acara diharapkan kondusif
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10">
+          <div class="card text-center text-bg-light">
+            <div class="card-header">
+              syukuran day 2
+            </div>
+            <div class="card-body">
+             <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>08.00 - 10.00</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar-event d-block"></i>
+                <span>selasa, 23 july 2024</span>
+              </div>
+             </div>
+            </div>
+            <div class="card-footer ">
+              saat acara diharapkan kondusif
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN (Center website) -->
+<section id="gallery" class="gallery ">
+  <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-10 text-center">  <br>
+        <h2>Gallery</h2>
+    </div>
+</div>
+  
+  <div class="buttong text-center" id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">lihat semua</button>
+    <button class="btn" onclick="filterSelection('luar')">di luar</button>
+    <button class="btn" onclick="filterSelection('dalam')"> di dalam</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="img/home.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="img/home.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>depan samping</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-04-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-04-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>depan</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-03-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-03-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>samping</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-02-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-02-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>atas</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-09-1068x711.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-09-1068x711.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>belakang</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-07-1068x711.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-07-1068x711.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>belakang samping</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 luar">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-12-1068x711.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-12-1068x711.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>belakang samping 2</h4>
+      </div>
+    </div>
+<!--dalam-->
+    <div class="column col mt-3 dalam">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-16-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-16-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>ruang keluarga</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 dalam">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-17-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-17-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>ruang keluarga 2</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 dalam">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-20-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-20-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>ruang tamu</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 dalam">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-21-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-21-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>ruang tamu 2</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 dalam">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-24-1068x712.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-24-1068x712.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>tangga</h4>
+      </div>
+    </div>
+
+    <div class="column col mt-3 dalam">
+      <div class="content">
+        <a href="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-25.jpg" data-toggle="lightbox" data-gallery="mygallery">
+          <img src="https://www.caandesign.com/wp-content/uploads/2016/08/characteristic-villa-forests-around-naarden-netherlands-unique-eco-roof-25.jpg" alt="Mountains" class="img-fluid w-100
+          rounded">
+      </a>
+        <h4>tangga 2</h4>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  </div>
+  <!-- END MAIN -->
+</section>
+
+<div id="audio-container">
+  <audio id="song" autoplay loop>
+    <source src="audio/Lana Del Rey - Born to Die (Instrumental).mp3" type="audio/mp3"> 
+  </audio>
+
+  <div class="audio-icon-wrapper" style="display: none;">
+  <i class="bi bi-music-note-beamed"></i>
+  </div>
+</div>
+
+  <!--pencet lihat undangan dlu-->
+  <script src="musik.js"></script>
+  
+<!--gallery-->
+  <script src="gallery.js"></script>
+
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+<!-- jam -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024,
+        month: 7,
+        day: 22,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        words: {
+          days: { singular: " hari", plural: " hari" },
+          hours: { singular: " jam", plural: " jam" },
+          minutes: { singular: " menit", plural: " menit" },
+          seconds: { singular: " detik", plural: " detik" },
+        },
+      });
+    </script>
+
+  </body>
+</html>
